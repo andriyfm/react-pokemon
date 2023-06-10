@@ -15,9 +15,9 @@ function ProgressBar({ progress, label }: ProgressBarProps) {
   return (
     <div className="flex flex-col gap-2">
       <div className="text-sm capitalize">{`${formatedLabel} (${progress})`}</div>
-      <div className="w-full h-2 bg-gray-200 rounded">
+      <div className="w-full h-2 rounded bg-slate-700">
         <div
-          className={`h-full rounded ${color}`}
+          className={`h-full rounded max-w-full ${color}`}
           style={{ width: `${progress}%` }}
         />
       </div>
