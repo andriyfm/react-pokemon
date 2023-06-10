@@ -128,8 +128,8 @@ export default function Detail() {
         </div>
 
         {/* Moves*/}
-        <div className="z-10 px-6 mt-5 sm:mt-0 sm:px-0">
-          <h3 className="mb-2 text-xl font-semibold text-center capitalize sm:text-left">
+        <div className="z-10 px-6 pt-5 mt-5 border-t border-dashed sm:mt-0 sm:px-0 border-slate-500">
+          <h3 className="mb-5 text-xl font-semibold text-center capitalize sm:text-left">
             moves ({pokemon.moves.length})
           </h3>
           <div className="flex flex-wrap justify-center gap-2 sm:justify-start">

@@ -33,14 +33,12 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="container flex items-center justify-between mx-auto">
-        {/* <SearchBar value={searchTerm} onChange={handleSearchChange} /> */}
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={handleOnPageChange}
-        />
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handleOnPageChange}
+      />
+
       <PokemonList list={list} isLoading={isLoading} />
     </Layout>
   );

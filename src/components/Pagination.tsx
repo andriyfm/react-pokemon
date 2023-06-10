@@ -14,7 +14,7 @@ function Pagination({
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex items-center justify-center w-full">
       <nav>
         <ul className="inline-flex space-x-2">
           {Array.from({ length: totalPages }, (_, index) => index + 1).map(
