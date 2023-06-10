@@ -4,7 +4,7 @@ import Pagination from "../components/Pagination";
 import PokemonList from "../components/PokemonList";
 import { Pokemon, fetchPokemon } from "../services/fetchPokemon";
 
-const totalPages = 18;
+const totalPages = 24;
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +15,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const pokemons = await fetchPokemon(currentPage, 18);
+        const pokemons = await fetchPokemon(currentPage, totalPages);
         setList(pokemons.pokemonList);
       } catch (error) {
         setList([]);

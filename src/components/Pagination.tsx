@@ -21,8 +21,10 @@ function Pagination({
             (page) => (
               <li key={page}>
                 <button
-                  className={`px-3 py-1 rounded text-white ${
-                    currentPage === page ? "bg-F2B807" : "bg-gray-500"
+                  className={`px-3 py-1 rounded-full w-10 h-10 flex justify-center items-center hover:scale-75 transition-all ease-out ${
+                    currentPage === page
+                      ? "bg-F2B807 text-white"
+                      : "bg-[#F5DB13] text-slate-800"
                   }`}
                   onClick={() => handleClick(page)}
                 >

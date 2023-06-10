@@ -40,7 +40,6 @@ export default function Detail() {
     if (!id) return;
     const fetch = async () => {
       const result = await getPokemonByName(id);
-      console.log({ result });
       const image = result.sprites.other.dream_world.front_default;
       setPokemon({ ...result, image });
     };
