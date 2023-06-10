@@ -9,12 +9,12 @@ type PokemonCardProps = Pokemon;
  */
 export default function PokemonCard({ name, image, types }: PokemonCardProps) {
   return (
-    <div className="flex flex-col relative overflow-hidden items-center justify-center w-64 h-64 gap-5 p-5 bg-transparent bg-slate-100 rounded-md hover:bg-[#F5DB13] transition-all ease-out duration-500 hover:scale-95">
+    <div className="flex flex-col relative overflow-hidden items-center justify-center w-64 h-64 gap-5 p-5 bg-slate-100 rounded-md hover:bg-[#F5DB13] transition-all ease-out duration-500 hover:scale-95">
       <div className="absolute inset-x-0 inset-y-0 z-0 flex items-center justify-center w-full h-full">
         <img
           src={image}
           alt={name}
-          className="object-cover w-[300px] h-auto grayscale opacity-[0.06]"
+          className="object-cover w-[300px] h-auto grayscale opacity-5"
         />
       </div>
 
