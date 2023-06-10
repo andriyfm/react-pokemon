@@ -46,6 +46,8 @@ export default function Detail() {
     fetch();
   }, [id]);
 
+  console.log(pokemon);
+
   if (!pokemon) return <div>Loading...</div>;
 
   return (
@@ -68,9 +70,12 @@ export default function Detail() {
           </div>
 
           <div className="flex flex-col w-full h-auto gap-5 p-5 divide-y rounded-md divide-dashed divide-slate-500">
-            <h1 className="text-4xl font-bold text-center capitalize sm:text-left">
-              {pokemon?.name ?? "-"}
-            </h1>
+            <div className="flex items-center justify-center gap-2 sm:justify-start">
+              <h1 className="text-4xl font-bold text-center capitalize sm:text-left">
+                {pokemon?.name ?? "-"}
+              </h1>
+              <Badge text={pokemon.species.name} isOutline />
+            </div>
 
             <p className="pt-5 text-center text-slate-200 sm:text-left">
               Ut eu ex sunt dolore consequat ex excepteur nostrud ea ad
