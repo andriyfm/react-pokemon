@@ -138,7 +138,7 @@ export default function Detail() {
           </h3>
           <div className="flex flex-wrap justify-center gap-2 sm:justify-start">
             {pokemon.moves.map((el, i) => (
-              <Badge key={i} text={el.move.name} isOutline />
+              <Badge key={i} text={el.move.name.replace("-", " ")} isOutline />
             ))}
           </div>
         </div>
