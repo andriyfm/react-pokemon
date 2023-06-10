@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="flex justify-center items-center text-white py-5">
-      <p>© 2023 - Pokemon Website Andri Firmansyah</p>
+    <footer className="relative z-10 flex items-center justify-center h-20 py-5 text-white">
+      <p className="text-xs">© 2023 - Pokemon Website Andri Firmansyah</p>
     </footer>
   );
 }

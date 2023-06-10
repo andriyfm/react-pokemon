@@ -28,13 +28,12 @@ export default function Home() {
   }, [currentPage]);
 
   const handleOnPageChange = (page: number) => {
-    console.log(page);
     setcurrentPage(page);
   };
 
   return (
     <Layout>
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container flex items-center justify-between mx-auto">
         {/* <SearchBar value={searchTerm} onChange={handleSearchChange} /> */}
         <Pagination
           currentPage={currentPage}
